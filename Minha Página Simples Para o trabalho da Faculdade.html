@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Minha Página Simples Para o trabalho da Faculdade</title>
+    <style>
+        /* CSS - estilização da página */
+
+        body {
+            background-color: #f0f8ff; /* cor suave de fundo */
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+
+        h1 {
+            color: #2c3e50; /* cor diferente */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            text-align: justify;
+            margin: 0 0 20px 0;
+        }
+
+        ul {
+            margin-top: 0;
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 12px; /* espaçamento maior entre itens */
+        }
+
+        img.hobby-image {
+            width: 300px;
+            border-radius: 15px;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #34495e;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        table img {
+            width: 120px;
+            border-radius: 10px;
+        }
+
+        a {
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #e74c3c; /* muda cor no hover */
+            text-decoration: underline;
+        }
+
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        #mensagem {
+            font-size: 18px;
+            color: #27ae60;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Título principal -->
+    <h1>Lucas Oliveira dos Santos</h1>
+
+    <!-- Parágrafo com breve autobiografia -->
+    <p>
+        Olá! Meu nome é Lucas, tenho 18 anos, moro em São Paulo e gosto de tecnologia, viagens e fotografia.
+    </p>
+
+    <!-- Botão para interagir via JavaScript -->
+    <button id="btnMensagem">Clique para ver uma mensagem!</button>
+    <div id="mensagem"></div>
+
+    <!-- Lista não ordenada com hobbies -->
+    <ul>
+        <li>Fotografia</li>
+        <li>Leitura</li>
+        <li>Futebol</li>
+    </ul>
+
+    <!-- Imagem representando um hobby -->
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Câmera fotográfica" class="hobby-image" />
+
+    <!-- Tabela com países que gostaria de visitar -->
+    <table>
+        <tr>
+            <td>Japão</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg" alt="Bandeira do Japão" /></td>
+        </tr>
+        <tr>
+            <td>Itália</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg" alt="Bandeira da Itália" /></td>
+        </tr>
+        <tr>
+            <td>Canadá</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Canada.svg" alt="Bandeira do Canadá" /></td>
+        </tr>
+    </table>
+
+    <!-- Link para site de interesse -->
+    <a href="https://www.tecmundo.com.br" target="_blank" rel="noopener noreferrer">Visite o TecMundo - tecnologia e notícias</a>
+
+    <script>
+        // JavaScript para o botão
+        const btn = document.getElementById('btnMensagem');
+        const mensagemDiv = document.getElementById('mensagem');
+
+        btn.addEventListener('click', () => {
+            mensagemDiv.textContent = "Seja bem-vindo(a) ao meu site! Continue explorando e aprendendo sempre!";
+        });
+    </script>
+</body>
+</html>
